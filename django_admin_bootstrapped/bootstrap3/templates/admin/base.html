@@ -26,6 +26,9 @@
     </script>
 
     {% block extrahead %}{% endblock %}
+    <script type="text/javascript">
+    var jQuery = jQuery || django.jQuery;
+    </script>
     <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
     <script type="text/javascript">
     //<![CDATA[
@@ -34,7 +37,7 @@
                     $('input[type="submit"]').addClass('btn');
                     $('[title]').tooltip();
                 });
-            }(jQuery));
+            }(django.jQuery));
     //]]>
     </script>
     {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
