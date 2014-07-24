@@ -6,6 +6,8 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+window.jQuery = django.jQuery;
+
 if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }
 
 /* ========================================================================
